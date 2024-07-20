@@ -1,34 +1,34 @@
-// Before Interface
-/*
-function getFullName(person: {firstName: string,lastName: string}) {
-    return  `${person.firstName} ${person.lastName}`
-}
+// // Before Interface
+// /*
+// function getFullName(person: {firstName: string,lastName: string}) {
+//     return  `${person.firstName} ${person.lastName}`
+// }
 
-let person = {
-    firstName: 'manzi',
-    lastName: 'tresor'
-}
+// let person = {
+//     firstName: 'manzi',
+//     lastName: 'tresor'
+// }
 
-console.log(getFullName(person))
-*/
+// console.log(getFullName(person))
+// */
 
-// Using interface
+// // Using interface
 
-interface Person {
-    firstName: string, 
-    readonly lastName: string
-}
+// interface Person {
+//     firstName: string, 
+//     readonly lastName: string
+// }
 
-function getFullName(person: Person): string {
-    return  `${person.firstName} ${person.lastName}`
-}
+// function getFullName(person: Person): string {
+//     return  `${person.firstName} ${person.lastName}`
+// }
 
-const person: Person = {
-    firstName: 'manzi',
-    lastName: 'tresor'
-}
-person.firstName = 'Divine'
-console.log(getFullName(person))
+// const person: Person = {
+//     firstName: 'manzi',
+//     lastName: 'tresor'
+// }
+// person.firstName = 'Divine'
+// console.log(getFullName(person))
 
-// Extending interface
+// // Extending interface
 
