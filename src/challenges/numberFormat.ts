@@ -13,3 +13,4 @@ for n = -420902 the function should return '-420,902'.
 function formatNumber(num:number): string {
     return num.toLocaleString()
 }
+
